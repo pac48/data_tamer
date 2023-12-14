@@ -31,7 +31,7 @@ if ( ament_cmake_FOUND )
         src/sinks/ros2_publisher_sink.cpp)
 endif()
 
-add_library(data_tamer STATIC
+add_library(data_tamer SHARED
     include/data_tamer/channel.hpp
     include/data_tamer/custom_types.hpp
     include/data_tamer/data_tamer.hpp
